@@ -1,0 +1,20 @@
+<div class="login-wrapper">
+  <p-card class="card">
+    <form [formGroup]="loginForm" (ngSubmit)="proceedLogin()">
+      <div class="flex flex-column">
+        <div class="w-full flex flex-column align-items-center justify-content-center gap-3 py-5">
+          <div class="flex flex-wrap justify-content-center align-items-center gap-2">
+            <label for="username" class="w-8rem">DNI:</label>
+            <input type="username" pInputText id="username" formControlName="username" class="p-1 w-12rem">
+          </div>
+          <div class="flex flex-wrap justify-content-center align-items-center gap-2">
+            <label for="password" class="w-8rem">CONTRASEÑA:</label>
+            <input type="password" pInputText id="password" formControlName="password" class="p-1 w-12rem">
+          </div>
+          <p-button type="submit" label="Login" icon="pi pi-user"
+            styleClass="flex justify-content-center align-items-center w-10rem mx-auto py-1 px-1" />
+        </div>
+      </div>
+    </form>
+  </p-card>
+</div>
